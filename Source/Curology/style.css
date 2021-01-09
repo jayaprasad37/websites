@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cantarell', sans-serif;
+}
+
+body{
+    background:linear-gradient(90deg, #fff, #ebebeb);
+    line-height: 3rem;
+}
+nav{
+    width: 100vw;
+    position: fixed;
+}
+nav ul{
+    margin-top: 2rem;
+    padding-left: 5rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+#logo{
+    font-size: larger;
+    font-weight: 900;
+}
+.container{
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.col{
+    flex: 1;
+}
+.content{
+    padding-right: 5rem;
+}
+
+.brandimage img{
+    display: block;
+    margin: auto;
+    width: 75%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border: 10px solid rgba(134, 134, 134, 0);
+    transition-duration: 0.5s;
+}
+.brandimage img:hover{
+    transform: translateX(20px);
+}
+
+button{
+    background-color: #000;
+    color: white;
+    border-style: none;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+@media only screen and (max-width:1024px){
+    body{
+        line-height: 2rem;
+    }
+    .container{
+        width: 80vw;
+    }
+    .content{
+        padding-right: 2rem;
+    }
+    .brandimage img{
+        border: 6px solid rgba(134, 134, 134, 0);
+    }
+}
+
+@media only screen and (max-width:550px){
+    nav ul{
+        margin-top: 2rem;
+        padding-left: 2rem;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container{
+        width: 90vw;
+        height: unset;
+        flex-direction: column-reverse;
+        padding-top: 6rem;
+    }
+    .col{
+        margin: 2rem 0;
+    }
+    .content{
+        text-align: justify;
+    }
+    button{
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+

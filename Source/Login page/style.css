@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+body{
+    font-size: 1.2rem;
+    
+    color: white; 
+}
+
+.loginbox{
+    margin: auto;
+    background-color: #50244e;
+    width: 400px;
+    height: 500px;
+    display: grid;
+    place-items: center;
+}
+
+.loginbox *{
+    border-radius: 5px;
+}
+.container{
+    
+    width: min-content;
+}
+
+h4{
+    text-transform: capitalize;
+}
+
+input, button{
+    width: 250px;
+    height: 35px;
+    padding: 10px;
+    margin: 1rem 0;
+    color: #50244e;
+    border: 2px solid white;
+    font-size: 0.9rem;
+}
+
+button{
+    width: 120px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+input:focus, button:hover, input:hover{
+    outline: none;
+    background-color: #50244e;
+    transition: 0.3s;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+

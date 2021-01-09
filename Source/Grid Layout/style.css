@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+nav{
+    width: 100vw;
+    position: fixed;
+    background-color: #e6e6e6;
+    padding: 2rem;
+}
+
+.homepage{
+    width: 100vw;
+    background-color: #e6e6e6;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.content{
+    position: relative;
+    top: 35vw;
+    line-height: 3rem;
+}
+
+.rightcol img{
+    height: 60%;
+    position: relative;
+    top: 15%;
+    float: right;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 70vw;
+    margin: auto;
+}
+.grid-container{
+    /* defining the grid layout */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap:80px;
+    padding: 250px;
+    margin: auto;
+}
+.card{
+    width: 100%;
+    min-height: 300px;
+    background-color: aqua;
+    border: 10px solid #414040;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url("images/watch.jpg");
+}
+.item2{
+    background-image: url("images/bag.jpg");
+}
+.item3{
+    background-image: url("images/bottle.jpg");
+}
+.item4{
+    background-image: url("images/chair.jpg");
+}
+.item5{
+    background-image: url("images/headphone.jpg");
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+.item6{
+    background-image: url("images/phone.jpg");
+}
+.item7{
+    background-image: url("images/buds.jpg");
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+.item8{
+    background-image: url("images/ceramic.jpg");
+}
+.item9{
+    background-image: url("images/camera.jpg");
+}
+.item10{
+    background-image: url("images/echo.jpg");
+}
+.item11{
+    background-image: url("images/flower.jpg");
+}
+
+footer{
+    width: 100vw;
+    height: 250px;
+    background-color: #e6e6e6;
+    display: grid;
+    place-items: center;
+}
+
